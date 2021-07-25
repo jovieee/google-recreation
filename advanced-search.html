@@ -4,36 +4,76 @@
         <title>Search</title>
         <link rel="stylesheet" href="styles.css">
         <style>
-            #the-buttons{
-                text-align: center;
-                margin: auto;
+            #newlogo {
+                display: block;
+                margin: 10px 10px;
+                padding: 10px 10px;
+                width: 74px;
             }
 
-            .submitbox {
-                font-family: Arial, sans-serif;
-                text-align: center;
-                font-size: auto;
-                width: 12%;
-                height: 30px;
-                background-color: #f5f5f5;
+            .question {
+                padding: none;
+                text-align: left;
+                margin: 10px 30px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+            }
+            
+            input:focus{
+            outline: none;
+            border-top: 1px solid blue;
+            border-left: 1px solid blue;
+            border-right: 1px solid blue;
+            border-bottom: 1px solid blue;
+            }
+
+            #bluebox {
+                padding: 5px;
+                color: white;
+                background-color: blue;
                 border-radius: 2px;
+                margin-left: 54.5%;
+                width:10%;
+                height: 7%;
+                font-size: 12px;
+                text-align: center;
+                text-indent: 0;
             }
         </style>
     </head>
     <body>
         <div>
             <nav>
-                <a href="image-search.html">Image Search</a> &nbsp 
-                <a href="advanced-search.html">Advanced Search</a>
+                <a href="advanced-search.html">Home</a> &nbsp 
+                <a href="image-search.html">Image Search</a>
             </nav>
         </div>
-        <img src="image/google-logo.png" alt = "Google logo" class = "logo">
-        <form action="https://google.com/search">
-            <input id = "inputbox" type="text" name="q">
+        <img id = "newlogo" src="image/google-logo.png" alt = "Google logo" class = "logo">
+
+        <p style="margin: 20px 40px; font-family: Arial, Helvetica; color: red; font-size: large;">Advanced Search</p>
+        <hr style = "border-color: azure;">
+        <p style="margin: 50px 40px; font-family: Arial, Helvetica;">Find pages with...</p>
+
+        <form style = "text-align: left;" action = "https://google.com/search">
+            <div class = "question">
+                all these words:        
+                <input style = "margin-left: 122px" class = "advancedbox" id = "inputbox" type="text" name="as_q">
+            </div>
+            <div class = "question">
+                This exact word or phrase:
+                <input style = "margin-left: 51px" class = "advancedbox" type="text" name="as_epq">
+            </div>
+            <div class = "question">
+                any of these words:
+                <input style = "margin-left: 97px" class = "advancedbox" type="text" name="as_oq">
+            </div>
+            <div class = "question">
+                none of these words:
+                <input style = "margin-left: 88px" class = "advancedbox" type="text" name="as_eq">
+            </div>
+            <div>
+                <button id = "bluebox" type="submit" name = "q"/>Advanced Search </button>
+            </div>
         </form>
-        <div id = "the-buttons">
-            <input class="submitbox" type="submit" value="Google Search">
-            <input class="submitbox" type="submit" value="I'm Feeling Lucky">
-        </div>
     </body>
 </html>

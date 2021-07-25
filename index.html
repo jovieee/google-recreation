@@ -7,6 +7,7 @@
             #the-buttons{
                 text-align: center;
                 margin: auto;
+                padding: auto;
             }
 
             .submitbox {
@@ -17,7 +18,10 @@
                 height: 30px;
                 background-color: #f5f5f5;
                 border-radius: 2px;
+                padding: 0px;
+                text-indent: 0px;
             }
+
         </style>
     </head>
     <body>
@@ -28,12 +32,14 @@
             </nav>
         </div>
         <img src="image/google-logo.png" alt = "Google logo" class = "logo">
+
         <form action="https://google.com/search">
             <input id = "inputbox" type="text" name="q">
+            <div id = "the-buttons">
+                <input class="submitbox" type="submit" value="Google Search"/>  &nbsp 
+                <input class="submitbox" type="submit" value="I'm Feeling Lucky" name = "btnI"/>
+            </div>
         </form>
-        <div id = "the-buttons">
-            <input class="submitbox" type="submit" value="Google Search">
-            <input class="submitbox" type="submit" value="I'm Feeling Lucky">
-        </div>
+
     </body>
 </html>
