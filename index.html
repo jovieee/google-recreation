@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            #the-buttons{
+                text-align: center;
+                margin: auto;
+            }
+
+            .submitbox {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                font-size: auto;
+                width: 12%;
+                height: 30px;
+                background-color: #f5f5f5;
+                border-radius: 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <nav>
+                <a href="image-search.html">Image Search</a> &nbsp 
+                <a href="advanced-search.html">Advanced Search</a>
+            </nav>
+        </div>
+        <img src="image/google-logo.png" alt = "Google logo" class = "logo">
+        <form action="https://google.com/search">
+            <input id = "inputbox" type="text" name="q">
+        </form>
+        <div id = "the-buttons">
+            <input class="submitbox" type="submit" value="Google Search">
+            <input class="submitbox" type="submit" value="I'm Feeling Lucky">
+        </div>
+    </body>
+</html>
